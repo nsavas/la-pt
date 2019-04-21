@@ -1,27 +1,24 @@
 {
-  "name": "la-pt",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "deck.gl": "^6.4.9",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-map-gl": "^4.1.1",
-    "react-scripts": "2.1.8"
-  },
+  "name": "3d-heatmap",
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start-local": "webpack-dev-server --env.local --progress --hot --open",
+    "start": "webpack-dev-server --progress --hot --open"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "d3-request": "^1.0.5",
+    "deck.gl": "^7.0.0-beta",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-map-gl": "^4.1.2"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.1"
+  }
 }
